@@ -523,9 +523,10 @@ p{
 }
 
 
+
 /* ################################################ MEDIA QUERIES #############################################  */
 
-@media (max-width: 950px){
+@media (max-width: 500px){
     html{
         font-size: 50%;
     }
@@ -535,6 +536,67 @@ p{
         text-align: center;
         display: block;
         width: 100%;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.5rem;
+    }
+
+    .row .img-box, 
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-wrapper .box{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .cta-banner-left, .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+
+        .contact-form .company-address, .contact-form .form{
+            float: none;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .contact-form .company-address{
+            margin-bottom: 2rem;
+        }
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.5rem;
     }
 
     .row{
@@ -572,4 +634,25 @@ p{
         .contact-form .company-address{
             margin-bottom: 2rem;
         }
+}
+
+@media(min-width:769px) and (max-width:1300px){
+    html{
+        font-size: 56.25%;
+    }
+
+    .features .box-wrapper .box{
+        height: auto;
+    }
+
+    .row .text-box h2{
+        font-size: 3rem;
+
+    }
+}
+
+@media(orientation:landscape) and (max-height:500){
+    .header{
+        height: 90vmax;
+    }
 }
